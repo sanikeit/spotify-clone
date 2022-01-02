@@ -1,0 +1,176 @@
+*{
+  color:white;
+  padding:0px;
+  margin:0px;
+}
+body{
+  background-color:wheat;
+}
+.logo{
+  width:50px;
+}
+.spot{
+  display: flex;
+  align-items:center;
+}
+.navbar {
+  display:flex;
+  align-items:center;
+   list-style-type:none;
+  height:80px;
+  background-color: black;
+  
+}
+.navbar li{
+/* border:2px solid red; */
+  padding:2px 10px;
+  font-size:1.2em;
+}
+.topright{
+  display:flex;
+  align-items:center;
+   margin-left: 69vw;
+  flex-wrap:wrap;
+}
+.topright li{
+  width:80px;
+
+}
+.container{
+  min-height:70vh;
+  background:url(https://images.pexels.com/photos/3721941/pexels-photo-3721941.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-repeat:no-repeat;
+  background-color:black;
+   background-size: 100% 100%;
+  color:black;
+  width:80%;
+margin:12px auto;
+  padding: 10px;
+   flex-wrap: wrap;
+
+  border-radius:20px;
+}
+.container h1{
+  width:100%;
+ text-align:center;
+}
+.songlist{
+  margin-top:20px;
+}
+.songitem{
+/*   margin-left:19px; */
+  margin:10px 19px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 2.4px 5px 2.1px 0;
+  height:40px;
+  font-size:1.5em;
+  width:45%;
+  flex-wrap:wrap;
+ background: rgba(255, 255, 255, 0.2);
+  border-radius:20px;
+}
+.songitem img{
+  width:50px;
+  padding:0px;
+  border-radius:34px;
+  opacity:1;
+}
+
+.songitem span{
+  padding-left:10px;
+  color:black;
+}
+.songitem .fa-play-circle{
+  color:black;
+}
+.songitem .fa-play-circle:hover{
+  color:white;
+  opacity:0.8;
+}
+
+
+.bottom{
+  background-color:black;
+  position:sticky;
+  height:140px;
+    display:flex;
+ justify-content:center; 
+  align-items:center; 
+ flex-direction:column;
+}
+
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  border-radius:20px;
+  margin-top:20px;
+  width: 80vw; /* Full-width */
+  height: 6px; /* Specified height */
+  background: #fff; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  cursor: pointer;
+}
+
+.but{
+  display:flex;
+  align-items:center;
+  cursor:pointer;
+  opacity:0.8;
+  
+}
+.fa-step-backward:hover,.fa-play-circle:hover,.fa-step-forward:hover{
+  color:lightgreen;
+  
+}
+
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  border-radius:20px;
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: lightgreen; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.songinfo{
+  position:absolute;
+  left:0px;
+  top:59px;
+  font-size: 1.1em;
+  display:flex;
+  align-items:center;
+  padding-top: 4px;
+
+}
+.songinfo img{
+  position:relative;
+  bottom:11px;
+  opacity:0;
+  transition:opacity 1s ease-in;
+}
+
+
+
+ 
